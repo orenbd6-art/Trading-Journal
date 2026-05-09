@@ -18,6 +18,9 @@ app.use('/api/uploads', uploadRoutes);
 app.use(errorMiddleware);
 
 const PORT = process.env.PORT || 10000; 
+app.get('/', (req, res) => {
+  res.send('Server is up and running!');
+});
 app.listen(PORT, () => {
   console.log(`🚀 Backend running on port ${PORT}`);
 });
