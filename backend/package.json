@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --exec ts-node src/app.ts",
     "build": "tsc",
-    "start": "node dist/src/app.js"
+    "start": "npx tsx src/app.ts"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "multer": "^2.1.1",
     "prisma": "^5.22.0",
     "recharts": "^3.8.1",
+    "tsx": "^4.21.0",
     "uuid": "^14.0.0"
   },
   "devDependencies": {
