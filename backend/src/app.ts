@@ -2,9 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import dotenv from 'dotenv';
-import { tradeRoutes } from './routes/trade.routes.js';
-import { uploadRoutes } from './routes/upload.routes.js';
-import { errorMiddleware } from './middleware/error.middleware.js';
+import { tradeRoutes } from './routes/trade.routes';
+import { uploadRoutes } from './routes/upload.routes';
+import { errorMiddleware } from './middleware/error.middleware';
 
 dotenv.config();
 const app = express();
