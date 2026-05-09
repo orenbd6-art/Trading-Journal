@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { TradeController } from '../controllers/trade.controller';
+import { TradeController } from '../controllers/trade.controller.js';
 
 const router = Router();
 router.get('/stats',  TradeController.getStats);
